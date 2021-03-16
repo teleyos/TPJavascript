@@ -1,6 +1,6 @@
 <?php 
 
-#include_once("connexion.php");
+include_once("connexion.php");
 
 function requete($req){
     $result = $conn->prepare($req);
