@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="script.js" defer></script>
     </head>
     <body>
         <div id="response"></div>

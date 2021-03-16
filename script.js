@@ -1,12 +1,12 @@
-xmlhttp=new XMLHttpRequest()
 
-xmlhttp.onreadystatechange = () => {
-  document.getElementById("response").innerHTML=xmlhttp.responseText;
-}
+function loadDoc(){
+	xmlhttp=new XMLHttpRequest()
 
-xmlhttp.open("GET","web.php",false);
-xmlhttp.send();
+	xmlhttp.onreadystatechange = () => {
+    console.log(this.readyState+"  "+this.status+"   "+this.responseText);
+  }
+	
+	xmlhttp.open("GET","web.php",true);
 
-function separateur(texte, separateur){
-    return texte.split(separateur);
+	xmlhttp.send();	
 }
