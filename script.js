@@ -6,7 +6,7 @@ function loadDoc(){
     document.write(xmlhttp.responseText);
   }
 	
-	xmlhttp.open("GET","./web.php",true);
+	xmlhttp.open("GET","./web.php",false);
 
 	xmlhttp.send();	
 }
