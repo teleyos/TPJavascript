@@ -2,8 +2,6 @@
 
 #include_once("connexion.php");
 
-echo "connected succesfuly !";
-
 function requete($req){
     $result = $conn->prepare($req);
     $result->fetchAll();
