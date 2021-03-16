@@ -3,7 +3,8 @@ function loadDoc(a){
 	xmlhttp=new XMLHttpRequest()
 
 	xmlhttp.onreadystatechange = () => {
-    document.getElementByID('response').innerHTML=xmlhttp.responseText;
+    var elem = document.getElementByID('response');
+    elem.innerHTML=xmlhttp.responseText;
   }
 	
 	xmlhttp.open("GET","./web.php",false);
