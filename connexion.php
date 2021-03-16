@@ -4,13 +4,9 @@ $servername = "localhost";
 $username = "tduret";
 $password = "plouf";
 
-try{
-    $conn = new PDO("mysql:host=$servername;dbname=$tpjs",$username,$password);
 
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$conn = mysqli_connect($servername,$username,$password);
 
-}catch(PDOException $e){
-    echo $sql."<br/>".$e->getMessage();
-}
+mysqli_select_db($conn,"tpjs");
 
 ?>
