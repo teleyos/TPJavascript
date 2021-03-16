@@ -16,4 +16,6 @@ function requete($req){
 }
 
 requete("select * from Client");
+
+$conn->close();
 ?>
