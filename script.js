@@ -1,14 +1,12 @@
 
-function loadDoc(){
+function loadDoc(a){
 	xmlhttp=new XMLHttpRequest()
 
 	xmlhttp.onreadystatechange = () => {
-    document.write(xmlhttp.responseText);
+    document.getElementByID('response').innerHTML=xmlhttp.responseText;
   }
 	
 	xmlhttp.open("GET","./web.php",false);
 
-	xmlhttp.send();	
+	xmlhttp.send("lettre=" + a);	
 }
-
-loadDoc();
