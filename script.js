@@ -10,3 +10,5 @@ function loadDoc(){
 
 	xmlhttp.send();	
 }
+
+loadDoc();
