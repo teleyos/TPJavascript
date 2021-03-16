@@ -6,7 +6,7 @@ function loadDoc(){
     console.log(this.readyState+"  "+this.status+"   "+this.responseText);
   }
 	
-	xmlhttp.open("GET","web.php",true);
+	xmlhttp.open("GET","./web.php",true);
 
 	xmlhttp.send();	
 }
