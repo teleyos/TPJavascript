@@ -17,5 +17,5 @@ function requete($req){
     }
 }
 
-requete("select * from Client");
+#requete("select * from Client");
 ?>
