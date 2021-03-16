@@ -4,10 +4,12 @@ $servername = "localhost";
 $username = "tduret";
 $password = "plouf";
 
-$conn = new mysqli($servername, $username, $password);
+try{
+    $conn = new PDO("mysql:host=$servername;dbname=$tpjs",$username,$password);
 
-if($conn->connect_error){
-    die("Connection failed: " . $conn->connect_error);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 }
+
 
 ?>
